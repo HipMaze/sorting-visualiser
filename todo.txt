@@ -1,0 +1,14 @@
+//TODO
+
+3- sorting service for the different columns
+4- permutation animation
+
+==============================================================
+
+Done
+
+1- create a column component
+2- create a column-array component
+
+  3-1 implement the different sorting algorithms (merge, insertion, bubble, shell...)
+  3-2 do the actual permutation
