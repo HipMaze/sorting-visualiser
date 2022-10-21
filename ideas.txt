@@ -1,0 +1,20 @@
+TODO
+
+1-create component col-val (barebones done)
+2-create component col-val-list
+
+
+
+3-create service col-sort with all the sorting algorithms that i want (looking for implementations right now)
+
+
+4-return a list of components in a sorted fashion
+5-animate the sorting sequence
+==========================================================================
+
+
+object colonne :  -id
+                  -value
+
+
+objet colonne liste : -liste de colonnes

@@ -1,0 +1,16 @@
+<div class="buttonsDiv">
+  <p *ngFor="let valueColumn in columnList">{{valueColumn}}</p>
+  <button (click)="onStartSort()">Sort</button>
+  <select [(ngModel)]="selectedAlgorithm">
+    <option *ngFor="let item of algorithmArray">
+      {{item}}
+    </option>
+</select>
+</div>
+
+<div class="columnDisplayDiv">
+  <app-value-column *ngFor="let valueColumn of columnList">
+    {{valueColumn}}
+  </app-value-column>
+</div>
+

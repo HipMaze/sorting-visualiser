@@ -1,7 +1,10 @@
 //TODO
 
 3- sorting service for the different columns
-4- permutation animation
+
+4- algo selector
+
+5- permutation animation
 
 ==============================================================
 
