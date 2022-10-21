@@ -37,7 +37,7 @@ export class ValueColumnSortService {
         array.push(lItem);
         lIndex++;
       }
-      else if(lItem < rItem){
+      else if(lItem.value < rItem.value){
         array.push(lItem);
         lIndex++;
       }
@@ -46,7 +46,6 @@ export class ValueColumnSortService {
         rIndex++;
       }
     }
-    console.log(array);
     return array;
   }
 
@@ -82,11 +81,13 @@ export class ValueColumnSortService {
       return array;
     }
 
-    const middle = Math.floor(array.length);
+    const middle = Math.floor(array.length/2);
     const left = array.slice(0, middle);
     const right = array.slice(middle);
 
     console.log(array);
+    console.log(left);
+    console.log(right);
     return this.merge(this.mergeSort(left),this.mergeSort(right));
   }
 

@@ -9,8 +9,7 @@
 </div>
 
 <div class="columnDisplayDiv">
-  <app-value-column *ngFor="let valueColumn of columnList">
-    {{valueColumn}}
+  <app-value-column *ngFor="let valueColumn of columnList" [valueColumn]="valueColumn">
   </app-value-column>
 </div>
 
