@@ -24,6 +24,10 @@ export class ValueColumnListComponent implements OnInit {
   this.columnList=this.valueColumnSortService.generateList();
   }
 
+  onGenerateRandomList(){
+    this.columnList=this.valueColumnSortService.generateList();
+  }
+
   onStartSort(){
   switch (this.selectedAlgorithm) {
     case "mergeSort":

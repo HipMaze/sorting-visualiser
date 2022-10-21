@@ -1,7 +1,7 @@
 <div class="buttonsDiv">
-  <p *ngFor="let valueColumn in columnList">{{valueColumn}}</p>
-  <button (click)="onStartSort()">Sort</button>
-  <select [(ngModel)]="selectedAlgorithm">
+  <button class="btn btn-primary btn-lg" (click)="onStartSort()">Sort</button>
+  <button class="btn btn-primary btn-lg" (click)="onGenerateRandomList()">Generate Random</button>
+  <select class="form-select form-select-lg mb-3" [(ngModel)]="selectedAlgorithm">
     <option *ngFor="let item of algorithmArray">
       {{item}}
     </option>

@@ -53,10 +53,10 @@ export class ValueColumnSortService {
 
 
   public generateList():ValueColumn[]{//generate a random size (4,10) list of random values (1,50)
-    let upperLimit=this.getRandomArbitrary(4,10);
+    let upperLimit=this.getRandomArbitrary(6,15);
     let array:ValueColumn[]=new Array();
     for (let i = 0; i < upperLimit; i++) {
-      array.push({id:i+1,value:this.getRandomArbitrary(1,50)});
+      array.push({id:i+1,value:this.getRandomArbitrary(1,100)});
     }
     console.log(array);
     return array;
@@ -68,7 +68,9 @@ export class ValueColumnSortService {
     for (let i = 0; i < len; i++) {
         for (let j = 0; j < len; j++) {
             if (arr[j].value > arr[j + 1].value) {
-                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+              const tmp = arr[j+1];
+              arr[j+1] = arr[j];
+              arr[j] = tmp;
             }
         }
     }
